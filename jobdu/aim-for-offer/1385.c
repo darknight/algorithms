@@ -13,7 +13,6 @@ int postorder[2000];
 int invalid;
 
 int rebuild(int i, int j, int start, int end) {
-	printf("%d %d, %d %d\n", i, j, start, end);
 	int k = 0, find = 0;
 	if(i > j || start > end) return -1;
 	if(j - i != end - start) return -1;
