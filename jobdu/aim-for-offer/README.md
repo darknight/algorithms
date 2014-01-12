@@ -10,3 +10,6 @@ Problem 27(ID: 1503) To do
 Problem 28(ID: 1369) To do
 Problem 29(ID: 1370) Time Limit Exceed when using quick sort of myself!
 Problem 30(ID: 1371) Time Limit Exceed when using heap sort of myself!
+Problem 38(ID: 1349) while(scanf()!=EOF), omit while cause 4 WA, damn!
+Problem 32~36 To do
+Problem 39~50 To do
