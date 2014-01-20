@@ -1,0 +1,39 @@
+import sys
+
+with open(sys.argv[1], 'r') as fp:
+    for test in fp:
+        row = int(test[0])
+        col = int(test[2])
+        chars = test[4:-1]
+        res = []
+        for i in range(row):
+            res.append([0] * col)
+        for i in range(row):
+            for j in range(col):
+                ch = chars[i * col + j]
+                if ch == '*':
+                    res[i][j] = '*'
+                    if i - 1 >= 0:
+                        # top left, top, top right
+                        if j - 1 >= 0 and res[i-1][j-1] != '*':
+                            res[i-1][j-1] += 1
+                        if res[i-1][j] != '*':
+                            res[i-1][j] += 1
+                        if j + 1 < col and res[i-1][j+1] != '*':
+                            res[i-1][j+1] += 1
+                    if j - 1 >= 0 and res[i][j-1] != '*':
+                        # left
+                        res[i][j-1] += 1
+                    if j + 1 < col:
+                        # right
+                        res[i][j+1] += 1
+                    if i + 1 < row:
+                        # bottom left, bottom, bottom right
+                        if j - 1 >= 0:
+                            res[i+1][j-1] += 1
+                        res[i+1][j] += 1
+                        if j + 1 < col:
+                            res[i+1][j+1] += 1
+        for i in range(row):
+            res[i] = ''.join(map(str, res[i]))
+        print ''.join(res)

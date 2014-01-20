@@ -1,0 +1,22 @@
+import sys
+from collections import defaultdict
+
+test_cases = open(sys.argv[1], 'r')
+for test in test_cases:
+    num = test[:-1]
+    d = defaultdict(int)
+    for n in num:
+        d[n] += 1
+    found = True
+    for i in range(len(num)):
+        n = int(num[i])
+        sub = str(i)
+        if sub not in d and n > 0 or \
+                sub in d and n != d[sub]:
+            found = False
+            break
+    if found:
+        print "1"
+    else:
+        print "0"
+test_cases.close()
