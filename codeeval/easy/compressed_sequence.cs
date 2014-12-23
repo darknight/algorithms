@@ -36,6 +36,6 @@ class MainClass
             string[] strArr = listArr.ToArray ();
             Console.WriteLine (String.Join (" ", strArr));
         }
-	return 0;
+        return 0;
     }
 }
