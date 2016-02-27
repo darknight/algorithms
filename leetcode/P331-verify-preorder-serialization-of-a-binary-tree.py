@@ -4,6 +4,7 @@ class Solution(object):
         :type preorder: str
         :rtype: bool
         """
+        #TODO: too slow, improve!
         preorder = preorder.split(',')
         length = len(preorder)
         if length < 3:
