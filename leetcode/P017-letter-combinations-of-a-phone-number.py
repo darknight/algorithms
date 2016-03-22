@@ -4,6 +4,7 @@ class Solution(object):
         :type digits: str
         :rtype: List[str]
         """
+        #TODO: slow & improve
         assert '0' not in digits and '1' not in digits
         length = len(digits)
         if length == 0:
