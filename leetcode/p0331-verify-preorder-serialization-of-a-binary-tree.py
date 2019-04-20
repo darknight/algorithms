@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def isValidSerialization(self, preorder):
         """
@@ -33,10 +35,10 @@ class Solution(object):
         return False
 
 if __name__ == '__main__':
-    #print Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#")
-    #print Solution().isValidSerialization("1,#")
-    #print Solution().isValidSerialization("9,#,#,1")
-    #print Solution().isValidSerialization("1")
-    #print Solution().isValidSerialization("9,#,92,#,#")
-    #print Solution().isValidSerialization("91,13,14,#,#,10")
-    print Solution().isValidSerialization("#") == True
+    #print(Solution().isValidSerialization("9,3,4,#,#,1,#,#,2,#,6,#,#"))
+    #print(Solution().isValidSerialization("1,#"))
+    #print(Solution().isValidSerialization("9,#,#,1"))
+    #print(Solution().isValidSerialization("1"))
+    #print(Solution().isValidSerialization("9,#,92,#,#"))
+    #print(Solution().isValidSerialization("91,13,14,#,#,10"))
+    print(Solution().isValidSerialization("#") == True)

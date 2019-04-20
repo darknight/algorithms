@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -41,5 +43,5 @@ if __name__ == '__main__':
     q = x[0]
     #x[6].val = 1
 
-    print Solution().isSameTree(p, q)
+    print(Solution().isSameTree(p, q))
 

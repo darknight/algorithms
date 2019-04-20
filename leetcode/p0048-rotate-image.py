@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param matrix, a list of lists of integers
     # @return a list of lists of integers
@@ -20,8 +22,8 @@ class Solution:
         return matrix
 
 if __name__ == '__main__':
-    print Solution().rotate([[1]])
-    print Solution().rotate([[1,2],[3,4]])
-    print Solution().rotate([[1,2,3],[4,5,6],[7,8,9]])
-    print Solution().rotate([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]])
+    print(Solution().rotate([[1]]))
+    print(Solution().rotate([[1,2],[3,4]]))
+    print(Solution().rotate([[1,2,3],[4,5,6],[7,8,9]]))
+    print(Solution().rotate([[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]))
 

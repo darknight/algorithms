@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def v1coinChange(self, coins, amount):
         """
@@ -52,10 +54,10 @@ class Solution(object):
         return -1
 
 if __name__ == '__main__':
-   #print Solution().coinChange([1,2,5], 100)
-   #print Solution().coinChange([37,233,253,483], 7163)
-   #print Solution().coinChange([1,2,5], 11)
-   #print Solution().coinChange([2], 3)
-   #print Solution().coinChange([5,306,188,467,494], 7047)
-   print Solution().coinChange([70,497,443,146,392], 5695)
-   #print Solution().coinChange([1,4,5], 8)
+   #print(Solution().coinChange([1,2,5], 100))
+   #print(Solution().coinChange([37,233,253,483], 7163))
+   #print(Solution().coinChange([1,2,5], 11))
+   #print(Solution().coinChange([2], 3))
+   #print(Solution().coinChange([5,306,188,467,494], 7047))
+   print(Solution().coinChange([70,497,443,146,392], 5695))
+   #print(Solution().coinChange([1,4,5], 8))

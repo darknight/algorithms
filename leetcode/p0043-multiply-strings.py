@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _multiply(self, num1, num2):
         """
@@ -34,4 +36,4 @@ class Solution(object):
         return '-' + n if neg else n
 
 if __name__ == '__main__':
-    print Solution().multiply('1231', '-234523')
+    print(Solution().multiply('1231', '-234523'))

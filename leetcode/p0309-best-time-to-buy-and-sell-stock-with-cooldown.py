@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _maxProfit(self, prices):
         """
@@ -66,7 +68,7 @@ class Solution(object):
         return sell[-1]
 
 if __name__ == '__main__':
-    print Solution().maxProfit([1,2,3,0,2])
-    print Solution().maxProfit([3,2,6,5,0,3])
-    print Solution().maxProfit([6,1,3,2,4,7])
-    print Solution().maxProfit([48,12,60,93,97,42,25,64,17,56,85,93,9,48,52,42,58,85,81,84,69,36,1,54,23,15,72,15,11,94])
+    print(Solution().maxProfit([1,2,3,0,2]))
+    print(Solution().maxProfit([3,2,6,5,0,3]))
+    print(Solution().maxProfit([6,1,3,2,4,7]))
+    print(Solution().maxProfit([48,12,60,93,97,42,25,64,17,56,85,93,9,48,52,42,58,85,81,84,69,36,1,54,23,15,72,15,11,94]))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {string} s
     # @return {boolean}
@@ -22,5 +24,5 @@ class Solution:
         return True
 
 if __name__ == '__main__':
-    print Solution().isPalindrome("A man, a plan, a canal: Panama")
-    print Solution().isPalindrome("race a car")
+    print(Solution().isPalindrome("A man, a plan, a canal: Panama"))
+    print(Solution().isPalindrome("race a car"))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def grayCode(self, n):
         """
@@ -27,6 +29,6 @@ class Solution(object):
         return _code(n)
 
 if __name__ == '__main__':
-    print Solution().grayCode(2)
-    print Solution().grayCode(3)
-    #print Solution().grayCode(4)
+    print(Solution().grayCode(2))
+    print(Solution().grayCode(3))
+    #print(Solution().grayCode(4))

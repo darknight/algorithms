@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def hIndex(self, citations):
         """
@@ -16,9 +18,9 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().hIndex([0])
-    print Solution().hIndex([1])
-    print Solution().hIndex([8])
-    print Solution().hIndex([3, 0, 6, 1, 5])
-    print Solution().hIndex([10, 8, 5, 4, 3])
-    print Solution().hIndex([10, 8, 5, 3, 3])
+    print(Solution().hIndex([0]))
+    print(Solution().hIndex([1]))
+    print(Solution().hIndex([8]))
+    print(Solution().hIndex([3, 0, 6, 1, 5]))
+    print(Solution().hIndex([10, 8, 5, 4, 3]))
+    print(Solution().hIndex([10, 8, 5, 3, 3]))

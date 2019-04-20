@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param s, a string
     # @return an integer
@@ -11,7 +13,7 @@ class Solution:
             num += D[c] * (26 ** i)
         return num
 
-print Solution().titleToNumber('B')
-print Solution().titleToNumber('Z')
-print Solution().titleToNumber('AA')
-print Solution().titleToNumber('AB')
+print(Solution().titleToNumber('B'))
+print(Solution().titleToNumber('Z'))
+print(Solution().titleToNumber('AA'))
+print(Solution().titleToNumber('AB'))

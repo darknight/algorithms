@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -62,5 +64,5 @@ if __name__ == '__main__':
     node2.left = node3
     node3.left = node4
 
-    print Solution().isBalanced(node1)
+    print(Solution().isBalanced(node1))
 

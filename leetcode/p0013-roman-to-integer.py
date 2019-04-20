@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return an integer
     def romanToInt(self, s):
@@ -23,10 +25,10 @@ class Solution:
         return partial_sum(0, len(s), s.upper())
 
 if __name__ == '__main__':
-    print Solution().romanToInt('VIII') == 8
-    print Solution().romanToInt('IX') == 9
-    print Solution().romanToInt('XCIX') == 99
-    print Solution().romanToInt('CMXCIX') == 999
-    print Solution().romanToInt('MDCCCLXXXVIII') == 1888
-    print Solution().romanToInt('MCMLXXVI') == 1976
-    print Solution().romanToInt('MMMCMXCIX') == 3999
+    print(Solution().romanToInt('VIII') == 8)
+    print(Solution().romanToInt('IX') == 9)
+    print(Solution().romanToInt('XCIX') == 99)
+    print(Solution().romanToInt('CMXCIX') == 999)
+    print(Solution().romanToInt('MDCCCLXXXVIII') == 1888)
+    print(Solution().romanToInt('MCMLXXVI') == 1976)
+    print(Solution().romanToInt('MMMCMXCIX') == 3999)

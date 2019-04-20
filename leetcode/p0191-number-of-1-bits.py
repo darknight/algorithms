@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param n, an integer
     # @return an integer
@@ -9,4 +11,4 @@ class Solution:
         return weight
 
 if __name__ == '__main__':
-    print Solution().hammingWeight(11)
+    print(Solution().hammingWeight(11))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class LRUCache(object):
     #TODO: slow, improve
     def __init__(self, capacity):

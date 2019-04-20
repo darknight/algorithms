@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -19,7 +21,7 @@ class Solution(object):
         def _dfs(node, partsum, path):
             if node is None:
                 return
-            #print node.val, path
+            #print(node.val, path)
             if node.left is None and node.right is None:
                 if node.val + partsum == sum:
                     path.append(node.val)
@@ -52,4 +54,4 @@ if __name__ == '__main__':
     t_2 = TreeNode(-2)
     t_3 = TreeNode(-3)
     t_2.right = t_3
-    print Solution().pathSum(t_2, -5)
+    print(Solution().pathSum(t_2, -5))

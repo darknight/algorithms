@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class TrieNode:
     # Initialize your data structure here.
     def __init__(self):
@@ -69,16 +71,16 @@ class Trie:
 if __name__ == '__main__':
     trie = Trie()
     #trie.insert("ab")
-    #print trie.startsWith("a")
-    #print trie.search("a")
+    #print(trie.startsWith("a"))
+    #print(trie.search("a"))
 
     trie.insert("abc")
-    print trie.search("abc")
-    print trie.search("ab")
+    print(trie.search("abc"))
+    print(trie.search("ab"))
 
     trie.insert("ab")
-    print trie.search("ab")
+    print(trie.search("ab"))
 
     trie.insert("ab")
-    print trie.search("ab")
+    print(trie.search("ab"))
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def rob(self, nums):
         """
@@ -29,5 +31,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().rob([1,1,1])
-    print Solution().rob([1,2,3,4,5,6,7,8,7,6,5,4,3,2,1])
+    print(Solution().rob([1,1,1]))
+    print(Solution().rob([1,2,3,4,5,6,7,8,7,6,5,4,3,2,1]))

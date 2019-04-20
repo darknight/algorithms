@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param num, a list of integer
     # @return an integer
@@ -27,9 +29,9 @@ class Solution:
         return res[0] - 1
 
 if __name__ == '__main__':
-    print Solution().findPeakElement([])
-    print Solution().findPeakElement([1])
-    print Solution().findPeakElement([1,2]) == 1
-    print Solution().findPeakElement([1,2,3]) == 2
-    print Solution().findPeakElement([1,3,1]) == 1
-    print Solution().findPeakElement([1,2,3,4,5,1,2,3,4]) == 4
+    print(Solution().findPeakElement([]))
+    print(Solution().findPeakElement([1]))
+    print(Solution().findPeakElement([1,2]) == 1)
+    print(Solution().findPeakElement([1,2,3]) == 2)
+    print(Solution().findPeakElement([1,3,1]) == 1)
+    print(Solution().findPeakElement([1,2,3,4,5,1,2,3,4]) == 4)

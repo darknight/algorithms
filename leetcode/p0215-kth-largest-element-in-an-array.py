@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} k
@@ -10,5 +12,5 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print Solution().findKthLargest([3,2,1,5,6,4,6], 2)
-    print Solution().findKthLargest([-1,-1], 2)
+    print(Solution().findKthLargest([3,2,1,5,6,4,6], 2))
+    print(Solution().findKthLargest([-1,-1], 2))

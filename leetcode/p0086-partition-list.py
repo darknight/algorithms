@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -53,6 +55,6 @@ if __name__ == '__main__':
     nodes[2].next = nodes[1]
     h = Solution().partition(nodes[2], 1)
     while h:
-        print h.val
+        print(h.val)
         h = h.next
 

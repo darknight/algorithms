@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param s, a string
     # @return an integer
@@ -12,8 +14,8 @@ class Solution:
         pass
 
 if __name__ == '__main__':
-    print Solution().lengthOfLastWord("Hello World")
-    print Solution().lengthOfLastWord("Hello")
-    print Solution().lengthOfLastWord("Hello ")
-    print Solution().lengthOfLastWord("")
-    print Solution().lengthOfLastWord("  ")
+    print(Solution().lengthOfLastWord("Hello World"))
+    print(Solution().lengthOfLastWord("Hello"))
+    print(Solution().lengthOfLastWord("Hello "))
+    print(Solution().lengthOfLastWord(""))
+    print(Solution().lengthOfLastWord("  "))

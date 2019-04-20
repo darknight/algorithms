@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def intToRoman(self, num):
         """
@@ -16,4 +18,4 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().intToRoman(1980)
+    print(Solution().intToRoman(1980))

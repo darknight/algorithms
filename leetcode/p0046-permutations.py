@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param num, a list of integer
     # @return a list of lists of integers
@@ -19,4 +21,4 @@ class Solution:
         return results
 
 if __name__ == '__main__':
-    print Solution().permute([1,2,3])
+    print(Solution().permute([1,2,3]))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def gameOfLife(self, board):
         """

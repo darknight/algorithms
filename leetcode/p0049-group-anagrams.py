@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def groupAnagrams(self, strs):
         """
@@ -21,7 +23,7 @@ class Solution(object):
                 if val > 0:
                     key.append(chr(ord('a')+i)+str(val))
             key = ''.join(key)
-            #print key
+            #print(key)
             if key in tmp:
                 tmp[key].append(s)
             else:
@@ -34,5 +36,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    #print Solution().groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
-    print Solution().groupAnagrams(["ron","huh","gay","tow","moe","tie","who","ion","rep","bob","gte","lee","jay","may","wyo","bay","woe","lip","tit","apt","doe","hot","dis","fop","low","bop","apt","dun","ben","paw","ere","bad","ill","fla","mop","tut","sol","peg","pop","les"])
+    #print(Solution().groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]))
+    print(Solution().groupAnagrams(["ron","huh","gay","tow","moe","tie","who","ion","rep","bob","gte","lee","jay","may","wyo","bay","woe","lip","tit","apt","doe","hot","dis","fop","low","bop","apt","dun","ben","paw","ere","bad","ill","fla","mop","tut","sol","peg","pop","les"]))

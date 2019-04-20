@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param    A       a list of integers
     # @param    elem    an integer, value need to be removed
@@ -28,7 +30,7 @@ class Solution:
         return length - n
 
 if __name__ == '__main__':
-    print Solution().removeElement([], 6)
-    print Solution().removeElement([6,6,6,6], 6)
-    print Solution().removeElement([1,2,3,4,5,6], 6)
-    print Solution().removeElement([1,2,3,3,3,3], 3)
+    print(Solution().removeElement([], 6))
+    print(Solution().removeElement([6,6,6,6], 6))
+    print(Solution().removeElement([1,2,3,4,5,6], 6))
+    print(Solution().removeElement([1,2,3,3,3,3], 3))

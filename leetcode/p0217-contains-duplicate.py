@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @return {boolean}
@@ -11,5 +13,5 @@ class Solution:
         return False
 
 if __name__ == '__main__':
-    print Solution().containsDuplicate([5,6,7,2,3,4,8])
-    print Solution().containsDuplicate([5,5])
+    print(Solution().containsDuplicate([5,6,7,2,3,4,8]))
+    print(Solution().containsDuplicate([5,5]))

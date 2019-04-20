@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -67,13 +69,13 @@ if __name__ == '__main__':
     nodes[2].right = nodes[4]
     codec = Codec()
     s = codec.serialize(nodes[0])
-    print s
+    print(s)
     r = codec.deserialize(s)
     def _preorder(node):
         if node:
-            print node.val
-            print 'left'
+            print(node.val)
+            print('left')
             _preorder(node.left)
-            print 'right'
+            print('right')
             _preorder(node.right)
     _preorder(r)

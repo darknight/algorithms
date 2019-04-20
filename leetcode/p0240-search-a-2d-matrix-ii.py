@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _searchMatrix(self, matrix, target):
         """
@@ -104,8 +106,8 @@ class Solution(object):
         return res[0]
 
 if __name__ == '__main__':
-    print Solution().searchMatrix([[-1, 3]], 3) == True
-    print Solution().searchMatrix([[-5]], -2) == False
+    print(Solution().searchMatrix([[-1, 3]], 3) == True)
+    print(Solution().searchMatrix([[-5]], -2) == False)
     matrix = [
         [1,2,3,4,5],
         [6,7,8,9,10],
@@ -113,7 +115,7 @@ if __name__ == '__main__':
         [16,17,18,19,20],
         [21,22,23,24,25],
     ]
-    print Solution().searchMatrix(matrix, 15) == True
+    print(Solution().searchMatrix(matrix, 15) == True)
     matrix = [
         [1,   4,  7, 11, 15],
         [2,   5,  8, 12, 19],
@@ -121,9 +123,9 @@ if __name__ == '__main__':
         [10, 13, 14, 17, 24],
         [18, 21, 23, 26, 30],
     ]
-    print Solution().searchMatrix(matrix, 5) == True
-    print Solution().searchMatrix(matrix, 8) == True
-    print Solution().searchMatrix(matrix, 20) == False
+    print(Solution().searchMatrix(matrix, 5) == True)
+    print(Solution().searchMatrix(matrix, 8) == True)
+    print(Solution().searchMatrix(matrix, 20) == False)
     matrix = [
         [5,9,11,12,14,17,20,22],
         [6,13,17,22,25,27,27,32],
@@ -136,4 +138,4 @@ if __name__ == '__main__':
         [25,31,36,47,52,60,60,63],
         [25,36,37,52,52,62,63,68],
     ]
-    print Solution().searchMatrix(matrix, 45) == False
+    print(Solution().searchMatrix(matrix, 45) == False)

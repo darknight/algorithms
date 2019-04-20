@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def rangeBitwiseAnd(self, m, n):
         """
@@ -31,5 +33,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    #print Solution().rangeBitwiseAnd(5, 7)
-    print Solution().rangeBitwiseAnd(4, 5)
+    #print(Solution().rangeBitwiseAnd(5, 7))
+    print(Solution().rangeBitwiseAnd(4, 5))

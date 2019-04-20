@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer} n
     # @return {boolean}
@@ -20,5 +22,5 @@ class Solution:
         return happy
 
 if __name__ == '__main__':
-    print Solution().isHappy(19)
-    print Solution().isHappy(2)
+    print(Solution().isHappy(19))
+    print(Solution().isHappy(2))

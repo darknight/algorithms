@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {string} haystack
     # @param {string} needle
@@ -18,6 +20,6 @@ class Solution:
         return -1
 
 if __name__ == '__main__':
-    print Solution().strStr("", "")
-    print Solution().strStr("a", "a")
+    print(Solution().strStr("", ""))
+    print(Solution().strStr("a", "a"))
 

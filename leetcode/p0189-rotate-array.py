@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} k
@@ -20,4 +22,4 @@ class Solution:
 if __name__ == '__main__':
     x = [1,2]
     Solution().rotate(x, 1)
-    print x
+    print(x)

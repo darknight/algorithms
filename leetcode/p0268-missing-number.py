@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def missingNumber(self, nums):
         """
@@ -11,4 +13,4 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().missingNumber([0,1,3])
+    print(Solution().missingNumber([0,1,3]))

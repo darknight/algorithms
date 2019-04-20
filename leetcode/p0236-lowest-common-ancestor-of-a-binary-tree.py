@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -65,6 +67,6 @@ if __name__ == '__main__':
     n2.right = n4
     n1.left = n0
     n1.right = n8
-    print Solution().lowestCommonAncestor(n3, n5, n1).val
-    print Solution().lowestCommonAncestor(n3, n5, n4).val
-    print Solution().lowestCommonAncestor(n3, n5, n0).val
+    print(Solution().lowestCommonAncestor(n3, n5, n1).val)
+    print(Solution().lowestCommonAncestor(n3, n5, n4).val)
+    print(Solution().lowestCommonAncestor(n3, n5, n0).val)

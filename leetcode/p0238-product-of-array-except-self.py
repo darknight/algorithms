@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _productExceptSelf(self, nums):
         """
@@ -37,5 +39,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().productExceptSelf([1,2,3,4])
-    print Solution().productExceptSelf([1,2])
+    print(Solution().productExceptSelf([1,2,3,4]))
+    print(Solution().productExceptSelf([1,2]))

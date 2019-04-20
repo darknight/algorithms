@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -32,4 +34,4 @@ if __name__ == '__main__':
     node3 = TreeNode(3)
     node1.right = node2
     node2.left = node3
-    print Solution().postorderTraversal(node1)
+    print(Solution().postorderTraversal(node1))

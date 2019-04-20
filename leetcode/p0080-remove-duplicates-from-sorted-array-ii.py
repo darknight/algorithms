@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param a list of integers
     # @return an integer
@@ -33,9 +35,9 @@ class Solution:
 
 if __name__ == '__main__':
     # WA for these cases
-    print Solution().removeDuplicates([1,1,1])
-    print Solution().removeDuplicates([1,1,1,2,2,3])
-    print Solution().removeDuplicates([1,1,1,2,2,2,3,3,3])
-    print Solution().removeDuplicates([1,2,3])
-    print Solution().removeDuplicates([1,1,2,2,3,3])
+    print(Solution().removeDuplicates([1,1,1]))
+    print(Solution().removeDuplicates([1,1,1,2,2,3]))
+    print(Solution().removeDuplicates([1,1,1,2,2,2,3,3,3]))
+    print(Solution().removeDuplicates([1,2,3]))
+    print(Solution().removeDuplicates([1,1,2,2,3,3]))
 

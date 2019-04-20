@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -45,6 +47,6 @@ if __name__ == '__main__':
     ha = ls0[0]
     hb = ls1[0]
     res = Solution().getIntersectionNode(ha, hb)
-    print res.val
+    print(res.val)
 
 

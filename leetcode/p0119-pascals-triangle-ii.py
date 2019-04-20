@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return a list of integers
     def getRow(self, rowIndex):
@@ -19,6 +21,6 @@ class Solution:
         return lastLevel
 
 if __name__ == '__main__':
-    print Solution().getRow(2)
-    print Solution().getRow(3)
-    print Solution().getRow(5)
+    print(Solution().getRow(2))
+    print(Solution().getRow(3))
+    print(Solution().getRow(5))

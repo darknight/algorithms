@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Below is the interface for Iterator, which is already defined for you.
 #
 class Iterator(object):
@@ -74,4 +76,4 @@ if __name__ == '__main__':
         while iter.hasNext():
             val = iter.peek()
             n = iter.next()
-            print val == n
+            print(val == n)

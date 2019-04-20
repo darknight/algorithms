@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     '''
     refer to
@@ -24,4 +26,4 @@ class Solution(object):
         return [a, b]
 
 if __name__ == '__main__':
-    print Solution().singleNumber([1,2,3,2,1,5,4,4,6,6])
+    print(Solution().singleNumber([1,2,3,2,1,5,4,4,6,6]))

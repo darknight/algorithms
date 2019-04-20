@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -59,5 +61,5 @@ if __name__ == '__main__':
 
     h = Solution().addTwoNumbers(l1[0], l2[0])
     while h:
-        print h.val
+        print(h.val)
         h = h.next

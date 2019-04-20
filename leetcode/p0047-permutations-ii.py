@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def permuteUnique(self, nums):
         """
@@ -30,9 +32,9 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    #print Solution().permuteUnique([1,2,3])
-    #print Solution().permuteUnique([1,2,3,4])
-    print Solution().permuteUnique([1,1,2])
-    print Solution().permuteUnique([1,2,2])
-    print Solution().permuteUnique([1,1,1,2])
-    print Solution().permuteUnique([1,1,2,2])
+    #print(Solution().permuteUnique([1,2,3]))
+    #print(Solution().permuteUnique([1,2,3,4]))
+    print(Solution().permuteUnique([1,1,2]))
+    print(Solution().permuteUnique([1,2,2]))
+    print(Solution().permuteUnique([1,1,1,2]))
+    print(Solution().permuteUnique([1,1,2,2]))

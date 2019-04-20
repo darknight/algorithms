@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -23,8 +25,8 @@ class Solution:
 
 if __name__ == '__main__':
     root = Solution().sortedArrayToBST([1,2,3,4,5])
-    print root.val == 3
-    print root.left.val == 1
-    print root.left.right.val == 2
-    print root.right.val == 4
-    print root.right.right.val == 5
+    print(root.val == 3)
+    print(root.left.val == 1)
+    print(root.left.right.val == 2)
+    print(root.right.val == 4)
+    print(root.right.right.val == 5)

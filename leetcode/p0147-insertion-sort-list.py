@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -75,18 +77,18 @@ if __name__ == '__main__':
     #nodes = [ListNode(i) for i in range(n)]
     for i in range(n-1):
         nodes[i].next = nodes[i + 1]
-    print 'before sort'
+    print('before sort')
     head = nodes[0]
     res = []
     while head:
         res.append(head.val)
         head = head.next
-    print res
+    print(res)
     new_head = Solution().insertionSortList(nodes[0])
-    print 'afert sort'
+    print('afert sort')
     res2 = []
     while new_head:
         res2.append(new_head.val)
         new_head = new_head.next
-    print res2
+    print(res2)
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def generateMatrix(self, n):
         """
@@ -51,4 +53,4 @@ if __name__ == '__main__':
     for n in range(2, 7):
         matrix = Solution().generateMatrix(n)
         for i in range(n):
-            print matrix[i]
+            print(matrix[i])

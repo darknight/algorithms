@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return a list of lists of integers
     def generate(self, numRows):
@@ -27,9 +29,9 @@ class Solution:
         return result
 
 if __name__ == '__main__':
-    print Solution().generate(1)
-    print Solution().generate(2)
-    print Solution().generate(3)
-    print Solution().generate(4)
-    print Solution().generate(5)
-    print Solution().generate(6)
+    print(Solution().generate(1))
+    print(Solution().generate(2))
+    print(Solution().generate(3))
+    print(Solution().generate(4))
+    print(Solution().generate(5))
+    print(Solution().generate(6))

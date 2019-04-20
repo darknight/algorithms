@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -38,7 +40,7 @@ if __name__ == '__main__':
         while h:
             vals.append(str(h.val))
             h = h.next
-        print '->'.join(vals)
+        print('->'.join(vals))
 
     #print_list(nodes[0])
     #print_list(Solution().removeNthFromEnd(nodes[0], 2))

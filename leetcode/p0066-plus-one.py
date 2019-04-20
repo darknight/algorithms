@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param digits, a list of integer digits
     # @return a list of integer digits
@@ -18,7 +20,7 @@ class Solution:
         return digits
 
 if __name__ == '__main__':
-    print Solution().plusOne([])
-    print Solution().plusOne([9])
-    print Solution().plusOne([1,2,3,4])
-    print Solution().plusOne([9,9,9])
+    print(Solution().plusOne([]))
+    print(Solution().plusOne([9]))
+    print(Solution().plusOne([1,2,3,4]))
+    print(Solution().plusOne([9,9,9]))

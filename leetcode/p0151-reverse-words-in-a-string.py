@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def reverseWords(self, s):
         """
@@ -10,4 +12,4 @@ class Solution(object):
         return ' '.join(words)
 
 if __name__ == '__main__':
-    print Solution().reverseWords("the sky is blue")
+    print(Solution().reverseWords("the sky is blue")

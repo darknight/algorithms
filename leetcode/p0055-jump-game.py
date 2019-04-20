@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def canJump(self, nums):
         """
@@ -22,5 +24,5 @@ class Solution(object):
         return tmp[-1] > 0
 
 if __name__ == '__main__':
-    print Solution().canJump([2,3,1,1,4])
-    print Solution().canJump([3,2,1,0,4])
+    print(Solution().canJump([2,3,1,1,4]))
+    print(Solution().canJump([3,2,1,0,4]))

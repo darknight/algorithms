@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer} n
     # @return {string}
@@ -25,11 +27,11 @@ class Solution:
         return res
 
 if __name__ == '__main__':
-    print Solution().countAndSay(1)
-    print Solution().countAndSay(2)
-    print Solution().countAndSay(3)
-    print Solution().countAndSay(4)
-    print Solution().countAndSay(5)
-    print Solution().countAndSay(6)
-    print Solution().countAndSay(7)
+    print(Solution().countAndSay(1))
+    print(Solution().countAndSay(2))
+    print(Solution().countAndSay(3))
+    print(Solution().countAndSay(4))
+    print(Solution().countAndSay(5))
+    print(Solution().countAndSay(6))
+    print(Solution().countAndSay(7))
 

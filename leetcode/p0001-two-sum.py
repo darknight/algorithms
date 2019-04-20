@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -27,5 +29,5 @@ class Solution(object):
         return [i, j]
 
 if __name__ == '__main__':
-    print Solution().twoSum([2, 7, 11, 15], 9)
-    print Solution().twoSum([0, 4, 3, 0], 0)
+    print(Solution().twoSum([2, 7, 11, 15], 9))
+    print(Solution().twoSum([0, 4, 3, 0], 0))

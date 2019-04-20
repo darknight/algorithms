@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def numIslands(self, grid):
         """
@@ -39,4 +41,4 @@ if __name__ == '__main__':
         '0 0 1 0 0'.split(' '),
         '0 0 0 1 1'.split(' '),
     ]
-    print Solution().numIslands(grid)
+    print(Solution().numIslands(grid))

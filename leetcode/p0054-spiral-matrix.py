@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def spiralOrder(self, matrix):
         """
@@ -54,4 +56,4 @@ if __name__ == '__main__':
        [ 7, 8, 9],
        [ 12, 11, 10],
     ]
-    print Solution().spiralOrder(matrix)
+    print(Solution().spiralOrder(matrix))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} target
@@ -34,6 +36,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print Solution().search([4,5,6,0,1,2,3], 2)
-    print Solution().search([4,5,6,0,1,2,3], 6)
-    print Solution().search([1], 0)
+    print(Solution().search([4,5,6,0,1,2,3], 2))
+    print(Solution().search([4,5,6,0,1,2,3], 6))
+    print(Solution().search([1], 0))

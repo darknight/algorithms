@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -45,5 +47,5 @@ if __name__ == '__main__':
     n4.next = n5
     h = Solution().reverseBetween(n1, 1, 5)
     while h:
-        print h.val
+        print(h.val)
         h = h.next

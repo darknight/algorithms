@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -41,4 +43,4 @@ if __name__ == '__main__':
     node11.right = node2
     n4.right = node1
 
-    print Solution().hasPathSum(node5, 22)
+    print(Solution().hasPathSum(node5, 22))

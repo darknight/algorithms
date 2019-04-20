@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A  a list of integers
     # @param m  an integer, length of A

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer} n
     # @return {string}
@@ -23,11 +25,11 @@ class Solution:
         return ''.join(res)
 
 if __name__ == '__main__':
-    #print Solution().convertToTitle(1)
-    #print Solution().convertToTitle(26)
-    #print Solution().convertToTitle(27)
-    #print Solution().convertToTitle(28)
-    #print Solution().convertToTitle(52)
-    #print Solution().convertToTitle(53)
-    print Solution().convertToTitle(702)
+    #print(Solution().convertToTitle(1))
+    #print(Solution().convertToTitle(26))
+    #print(Solution().convertToTitle(27))
+    #print(Solution().convertToTitle(28))
+    #print(Solution().convertToTitle(52))
+    #print(Solution().convertToTitle(53))
+    print(Solution().convertToTitle(702))
 

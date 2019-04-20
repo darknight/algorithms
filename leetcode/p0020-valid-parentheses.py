@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {string} s
     # @return {boolean}
@@ -20,8 +22,8 @@ class Solution:
         return False
 
 if __name__ == '__main__':
-    print Solution().isValid('()[]{}')
-    print Solution().isValid('()]{}')
-    print Solution().isValid('(]{}')
-    print Solution().isValid('{}')
-    print Solution().isValid('')
+    print(Solution().isValid('()[]{}'))
+    print(Solution().isValid('()]{}'))
+    print(Solution().isValid('(]{}'))
+    print(Solution().isValid('{}'))
+    print(Solution().isValid(''))

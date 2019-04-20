@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
@@ -32,4 +34,4 @@ if __name__ == '__main__':
     x[3].right = x[6]
     root = x[0]
 
-    print Solution().minDepth(root)
+    print(Solution().minDepth(root))

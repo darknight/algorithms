@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param height, a list of integer
     # @return an integer
@@ -27,7 +29,7 @@ class Solution:
             for col in range(length - row):
                 height[col] = min(height[col], height[col+1])
                 largest = max(height[col] * (row + 1), largest)
-            print height
+            print(height)
         return largest
 
     #Memory Limit Exceeded
@@ -103,6 +105,6 @@ class Solution:
 
         return largest
 
-print Solution().largestRectangleArea([2,1,5,6,2,3])
-print Solution().largestRectangleArea([2,1,3,2,1,3])
+print(Solution().largestRectangleArea([2,1,5,6,2,3]))
+print(Solution().largestRectangleArea([2,1,3,2,1,3]))
 

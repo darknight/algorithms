@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def subsets(self, nums):
         """
@@ -19,8 +21,8 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().subsets([])
-    print Solution().subsets([1])
-    print Solution().subsets([1,2])
-    print Solution().subsets([3,2,1])
-    print Solution().subsets([1,3,2,4])
+    print(Solution().subsets([]))
+    print(Solution().subsets([1]))
+    print(Solution().subsets([1,2]))
+    print(Solution().subsets([3,2,1]))
+    print(Solution().subsets([1,3,2,4]))

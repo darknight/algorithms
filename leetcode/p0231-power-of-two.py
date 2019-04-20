@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def isPowerOfTwo(self, n):
         """
@@ -13,5 +15,5 @@ class Solution(object):
         return True
 
 if __name__ == '__main__':
-    print Solution().isPowerOfTwo(63)
-    print Solution().isPowerOfTwo(64)
+    print(Solution().isPowerOfTwo(63))
+    print(Solution().isPowerOfTwo(64))

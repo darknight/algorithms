@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -34,4 +36,4 @@ if __name__ == '__main__':
     nodes[0].right = nodes[2]
     nodes[1].right = nodes[4]
     nodes[2].left = nodes[3]
-    print Solution().rightSideView(nodes[0])
+    print(Solution().rightSideView(nodes[0]))

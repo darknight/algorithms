@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def threeSum(self, nums):
         """
@@ -38,5 +40,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().threeSum([-1, 0, 1, 2, -1, -4])
-    print Solution().threeSum([-2, 0, 1, 1, 2])
+    print(Solution().threeSum([-1, 0, 1, 2, -1, -4]))
+    print(Solution().threeSum([-2, 0, 1, 1, 2]))

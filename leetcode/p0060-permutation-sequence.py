@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _getPermutation(self, n, k):
         """
@@ -19,7 +21,7 @@ class Solution(object):
                 _permutate(new_list, i+1)
 
         _permutate(raw, 0)
-        #print found[0]
+        #print(found[0])
         return found[0]
 
     def getPermutation(self, n, k):

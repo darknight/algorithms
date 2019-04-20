@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A a list of integers
     # @return nothing, sort in place
@@ -29,26 +31,26 @@ class Solution:
 if __name__ == '__main__':
     A = [0,0]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [2,1]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [1,0]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [2,0]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [1,2,0]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [1,2,0,1,2,0,2,1,2,1,0,0,0,1]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [2,2,2,2,2,2,0,0,0,0,0,0]
     Solution().sortColors(A)
-    print A
+    print(A)
     A = [2,2,2,2,2,1,1,1,1,1,1]
     Solution().sortColors(A)
-    print A
+    print(A)
 

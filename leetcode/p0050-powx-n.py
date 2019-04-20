@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {float} x
     # @param {integer} n
@@ -28,11 +30,11 @@ class Solution:
 
 if __name__ == '__main__':
     #NOTE: WA or RE for these cases, bloody hell...
-    print Solution().myPow(2.0, 8)
-    print Solution().myPow(34.00515, -3)
-    print Solution().myPow(0.00001, 2147483647)
-    print Solution().myPow(0.44894, -5)
-    print Solution().myPow(1.00000, 2147483647)
-    print Solution().myPow(-1.00000, -2147483648)
-    print Solution().myPow(-13.62608, 3)
+    print(Solution().myPow(2.0, 8))
+    print(Solution().myPow(34.00515, -3))
+    print(Solution().myPow(0.00001, 2147483647))
+    print(Solution().myPow(0.44894, -5))
+    print(Solution().myPow(1.00000, 2147483647))
+    print(Solution().myPow(-1.00000, -2147483648))
+    print(Solution().myPow(-13.62608, 3))
 

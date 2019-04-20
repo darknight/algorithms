@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def getHint(self, secret, guess):
         """
@@ -24,6 +26,6 @@ class Solution(object):
         return '%dA%dB' % (bulls, cows)
 
 if __name__ == '__main__':
-    print Solution().getHint('1807', '7810')
-    print Solution().getHint('1123', '0111')
-    print Solution().getHint('1122', '2211')
+    print(Solution().getHint('1807', '7810'))
+    print(Solution().getHint('1123', '0111'))
+    print(Solution().getHint('1122', '2211'))

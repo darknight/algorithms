@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param n, an integer
     # @return an integer
@@ -20,7 +22,7 @@ class Solution:
         return s2
 
 if __name__ == '__main__':
-    print Solution().climbStairs(1)
-    print Solution().climbStairs(2)
-    print Solution().climbStairs(3)
-    print Solution().climbStairs(4)
+    print(Solution().climbStairs(1))
+    print(Solution().climbStairs(2))
+    print(Solution().climbStairs(3))
+    print(Solution().climbStairs(4))

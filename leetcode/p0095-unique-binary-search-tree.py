@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode(object):
     def __init__(self, x):
@@ -40,12 +42,12 @@ class Solution(object):
 
 if __name__ == '__main__':
     for root in Solution().generateTrees(2):
-        print '-----------'
+        print('-----------')
         def _pp(node):
             if node is None:
                 return
-            print node.val
-            print 'left', _pp(node.left)
-            print 'right', _pp(node.right)
+            print(node.val)
+            print('left', _pp(node.left))
+            print('right', _pp(node.right))
         _pp(root)
 

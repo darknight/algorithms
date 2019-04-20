@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -50,7 +52,7 @@ if __name__ == '__main__':
     while i.hasNext():
         v.append(i.next())
 
-    print v
+    print(v)
 
 
     root = TreeNode(10)
@@ -59,6 +61,6 @@ if __name__ == '__main__':
     while i.hasNext():
         v.append(i.next())
 
-    print v
+    print(v)
 
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return an integer
     def _uniquePaths(self, m, n):
@@ -35,9 +37,9 @@ class Solution:
         return path(m-1, n-1)
 
 if __name__ == '__main__':
-    print Solution().uniquePaths(1, 1) == 1
-    print Solution().uniquePaths(1, 5)
-    print Solution().uniquePaths(2, 2)
-    print Solution().uniquePaths(3, 3)
-    print Solution().uniquePaths(2, 3)
-    print Solution().uniquePaths(23, 12)
+    print(Solution().uniquePaths(1, 1) == 1)
+    print(Solution().uniquePaths(1, 5))
+    print(Solution().uniquePaths(2, 2))
+    print(Solution().uniquePaths(3, 3))
+    print(Solution().uniquePaths(2, 3))
+    print(Solution().uniquePaths(23, 12))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return an integer
     def numTrees(self, n):
@@ -11,7 +13,7 @@ class Solution:
             res.append(total)
         return res[-1]
 
-print Solution().numTrees(4)
-print Solution().numTrees(5)
-print Solution().numTrees(6)
-print Solution().numTrees(7)
+print(Solution().numTrees(4))
+print(Solution().numTrees(5))
+print(Solution().numTrees(6))
+print(Solution().numTrees(7))

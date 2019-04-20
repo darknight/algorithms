@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class MinStack:
     # initialize your data structure here.
     def __init__(self):
@@ -33,12 +35,12 @@ class MinStack:
 if __name__ == '__main__':
     s = MinStack()
     s.push(5)
-    print s.getMin()
+    print(s.getMin())
     s.push(6)
-    print s.getMin()
+    print(s.getMin())
     s.push(4)
-    print s.getMin()
+    print(s.getMin())
     s.push(7)
-    print s.getMin()
+    print(s.getMin())
     s.push(1)
-    print s.getMin()
+    print(s.getMin())

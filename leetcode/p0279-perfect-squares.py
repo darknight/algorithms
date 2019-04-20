@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def numSquares(self, n):
         """
@@ -21,7 +23,7 @@ class Solution(object):
                     continue
                 if part == d:
                     #tmp.append(d)
-                    #print 'bingo=>',tmp
+                    #print('bingo=>',tmp)
                     #tmp.pop()
                     res[0] = min(num+1, res[0]) 
                     break
@@ -34,10 +36,10 @@ class Solution(object):
         return res[0]
 
 if __name__ == '__main__':
-    #print Solution().numSquares(12)
-    #print Solution().numSquares(13)
-    #print Solution().numSquares(67)
-    #print Solution().numSquares(64)
-    #print Solution().numSquares(643)
-    #print Solution().numSquares(7168)
-    print Solution().numSquares(9975)
+    #print(Solution().numSquares(12))
+    #print(Solution().numSquares(13))
+    #print(Solution().numSquares(67))
+    #print(Solution().numSquares(64))
+    #print(Solution().numSquares(643))
+    #print(Solution().numSquares(7168))
+    print(Solution().numSquares(9975))

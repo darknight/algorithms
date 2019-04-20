@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @param {integer} target
@@ -48,5 +50,5 @@ class Solution:
         return [lower, upper]
 
 if __name__ == '__main__':
-    print Solution().searchRange([1,2,3,4,5,7,7,8,9,10], 8)
+    print(Solution().searchRange([1,2,3,4,5,7,7,8,9,10], 8))
 

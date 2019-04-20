@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def findDuplicate(self, nums):
         """
@@ -13,7 +15,7 @@ class Solution(object):
         for target in range(1, n+1):
             min_val = (1+target-1)*(target-1)/2 + (n-target+1)*target + target
             max_val = target*target + (target+1+n)*(n-target)/2 + target
-            #print target, min_val, max_val
+            #print(target, min_val, max_val)
             if min_val <= sum_val <= max_val:
                 k = 0
                 for num in nums:
@@ -50,4 +52,4 @@ class Solution(object):
 if __name__ == '__main__':
     x = range(1, 1000)
     x.append(2)
-    print Solution().findDuplicate(x)
+    print(Solution().findDuplicate(x))

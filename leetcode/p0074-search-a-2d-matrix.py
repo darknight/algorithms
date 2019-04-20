@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param matrix, a list of lists of integers
     # @param target, an integer
@@ -23,8 +25,8 @@ class Solution:
             row = start
         else:
             return False
-        #print 'start: %d, stop: %d' % (start, stop)
-        #print 'search row: %d' % row
+        #print('start: %d, stop: %d' % (start, stop))
+        #print('search row: %d' % row)
         start = 0
         stop = last
         while start <= stop:
@@ -43,14 +45,14 @@ if __name__ == '__main__':
         [10,11,16,20],
         [23,30,34,50]
         ]
-    print Solution().searchMatrix(m, 3) == True
-    print Solution().searchMatrix(m, 8) == False
-    print Solution().searchMatrix(m, 16) == True
-    print Solution().searchMatrix(m, 17) == False
-    print Solution().searchMatrix(m, 30) == True
-    print Solution().searchMatrix(m, 55) == False
+    print(Solution().searchMatrix(m, 3) == True)
+    print(Solution().searchMatrix(m, 8) == False)
+    print(Solution().searchMatrix(m, 16) == True)
+    print(Solution().searchMatrix(m, 17) == False)
+    print(Solution().searchMatrix(m, 30) == True)
+    print(Solution().searchMatrix(m, 55) == False)
 
     m = [[1,3]]
-    print Solution().searchMatrix(m, 2) == False
-    print Solution().searchMatrix(m, 1) == True
-    print Solution().searchMatrix(m, 4) == False
+    print(Solution().searchMatrix(m, 2) == False)
+    print(Solution().searchMatrix(m, 1) == True)
+    print(Solution().searchMatrix(m, 4) == False)

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def isAnagram(self, s, t):
         """
@@ -11,4 +13,4 @@ class Solution(object):
         return Counter(s) == Counter(t)
 
 if __name__ == '__main__':
-    print Solution().isAnagram('anagram', 'nagaram')
+    print(Solution().isAnagram('anagram', 'nagaram'))

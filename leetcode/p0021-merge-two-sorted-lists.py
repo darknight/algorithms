@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -59,6 +61,6 @@ if __name__ == '__main__':
     #head = Solution().mergeTwoLists(node1, n3)
     head = Solution().mergeTwoLists(n3, node1)
     while head:
-        print head.val
+        print(head.val)
         head = head.next
 

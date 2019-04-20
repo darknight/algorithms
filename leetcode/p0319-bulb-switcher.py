@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _bulbSwitch(self, n):
         """
@@ -89,8 +91,8 @@ class Solution(object):
 
 if __name__ == '__main__':
     for i in range(1, 38):
-        print i, '=>', Solution().bulbSwitch(i)
-    #print Solution().bulbSwitch(382)
-    #print Solution().bulbSwitch(10000)
-    #print Solution().bulbSwitch(100000)
-    #print Solution().bulbSwitch(999999)
+        print(i, '=>', Solution().bulbSwitch(i))
+    #print(Solution().bulbSwitch(382))
+    #print(Solution().bulbSwitch(10000))
+    #print(Solution().bulbSwitch(100000))
+    #print(Solution().bulbSwitch(999999))

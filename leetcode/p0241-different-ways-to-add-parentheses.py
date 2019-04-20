@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def diffWaysToCompute(self, input):
         """
@@ -28,5 +30,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().diffWaysToCompute('2-1-1')
-    print Solution().diffWaysToCompute('2*3-4*5')
+    print(Solution().diffWaysToCompute('2-1-1'))
+    print(Solution().diffWaysToCompute('2*3-4*5'))

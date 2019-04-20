@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param prices, a list of integer
     # @return an integer
@@ -17,6 +19,6 @@ class Solution:
             j += 1
         return res
 
-print Solution().maxProfit([1,3])
-print Solution().maxProfit([1,2,3,4,5])
-print Solution().maxProfit([1,2,6,4,5])
+print(Solution().maxProfit([1,3]))
+print(Solution().maxProfit([1,2,3,4,5]))
+print(Solution().maxProfit([1,2,6,4,5]))

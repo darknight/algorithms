@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, x):
@@ -36,4 +38,4 @@ if __name__ == '__main__':
     n1.right = n3
     n2.right = n5
 
-    print Solution().binaryTreePaths(n1)
+    print(Solution().binaryTreePaths(n1))

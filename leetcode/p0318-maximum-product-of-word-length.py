@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def maxProduct(self, words):
         """
@@ -25,6 +27,6 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"])
-    print Solution().maxProduct(["a", "ab", "abc", "d", "cd", "bcd", "abcd"])
-    print Solution().maxProduct(["a", "aa", "aaa", "aaaa"])
+    print(Solution().maxProduct(["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]))
+    print(Solution().maxProduct(["a", "ab", "abc", "d", "cd", "bcd", "abcd"]))
+    print(Solution().maxProduct(["a", "aa", "aaa", "aaaa"]))

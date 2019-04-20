@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -51,5 +53,5 @@ if __name__ == '__main__':
     n3.left = n7
     n3.right = n5
 
-    print Solution().isSymmetric(n1)
+    print(Solution().isSymmetric(n1))
 

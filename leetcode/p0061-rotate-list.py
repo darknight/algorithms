@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
@@ -42,5 +44,5 @@ if __name__ == '__main__':
     head = nodes[0]
     head = Solution().rotateRight(head, 5)
     while head:
-        print head.val
+        print(head.val)
         head = head.next

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def combinationSum3(self, k, n):
         """
@@ -23,6 +25,6 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().combinationSum3(3, 7)
-    print Solution().combinationSum3(3, 9)
-    print Solution().combinationSum3(2, 18)
+    print(Solution().combinationSum3(3, 7))
+    print(Solution().combinationSum3(3, 9))
+    print(Solution().combinationSum3(2, 18))

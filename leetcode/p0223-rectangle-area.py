@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer} A
     # @param {integer} B
@@ -41,6 +43,6 @@ class Solution:
         return area1 + area2 - x * y
 
 if __name__ == '__main__':
-    #print Solution().computeArea(-3, 0, 3, 4, 0, -1, 9, 2)
-    print Solution().computeArea(-2, -2, 2, 2, 3, 3, 4, 4)
-    #print Solution().computeArea(0, 0, 0, 0, -1, -1, 1, 1)
+    #print(Solution().computeArea(-3, 0, 3, 4, 0, -1, 9, 2))
+    print(Solution().computeArea(-2, -2, 2, 2, 3, 3, 4, 4))
+    #print(Solution().computeArea(0, 0, 0, 0, -1, -1, 1, 1))

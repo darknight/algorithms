@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -33,15 +35,15 @@ if __name__ == '__main__':
     #n3.next = n4
     #n4.next = n5
 
-    print 'before:'
+    print('before:')
     p = n1
     while p:
-        print p.val
+        print(p.val)
         p = p.next
     root = Solution().deleteDuplicates(n1)
-    print 'after:'
+    print('after:')
     p = root
     while p:
-        print p.val
+        print(p.val)
         p = p.next
 

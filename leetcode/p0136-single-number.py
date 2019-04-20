@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A, a list of integer
     # @return an integer
@@ -7,4 +9,4 @@ class Solution:
             res = res ^ i
         return res
 
-print Solution().singleNumber([1,2,3,4,5,4,3,2,1])
+print(Solution().singleNumber([1,2,3,4,5,4,3,2,1]))

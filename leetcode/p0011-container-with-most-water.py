@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return an integer
     def _maxArea(self, height):
@@ -69,4 +71,4 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print Solution().maxArea([1, 4, 3, 1, 5])
+    print(Solution().maxArea([1, 4, 3, 1, 5]))

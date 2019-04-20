@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def v1canCompleteCircuit(self, gas, cost):
         """
@@ -66,4 +68,4 @@ class Solution(object):
         return index
 
 if __name__ == '__main__':
-    print Solution().canCompleteCircuit([1,2,3,5], [2,3,4,3])
+    print(Solution().canCompleteCircuit([1,2,3,5], [2,3,4,3]))

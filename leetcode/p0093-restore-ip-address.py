@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def restoreIpAddresses(self, s):
         """
@@ -33,10 +35,10 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().restoreIpAddresses('25525511135')
-    print Solution().restoreIpAddresses('8888')
-    print Solution().restoreIpAddresses('0000')
-    print Solution().restoreIpAddresses('255255255255')
-    print Solution().restoreIpAddresses('127001')
-    print Solution().restoreIpAddresses('19216811')
-    print Solution().restoreIpAddresses('1052856')
+    print(Solution().restoreIpAddresses('25525511135'))
+    print(Solution().restoreIpAddresses('8888'))
+    print(Solution().restoreIpAddresses('0000'))
+    print(Solution().restoreIpAddresses('255255255255'))
+    print(Solution().restoreIpAddresses('127001'))
+    print(Solution().restoreIpAddresses('19216811'))
+    print(Solution().restoreIpAddresses('1052856'))

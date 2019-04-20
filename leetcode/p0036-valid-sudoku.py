@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {character[][]} board
     # @return {boolean}
@@ -25,7 +27,7 @@ class Solution:
                 for j in range(3):
                     row = i + k / 3 * 3
                     col = j + k % 3 * 3
-                    print row, col
+                    print(row, col)
                     if board[row][col].isdigit():
                         if board[row][col] in occur:
                             return False
@@ -34,7 +36,7 @@ class Solution:
         return True
 
 if __name__ == '__main__':
-    print Solution().isValidSudoku([
+    print(Solution().isValidSudoku([
             ['5','3','.','.','7','.','.','.','.'],
             ['6','.','.','1','9','5','.','.','.'],
             ['.','9','8','.','.','.','.','6','.'],
@@ -44,4 +46,4 @@ if __name__ == '__main__':
             ['.','6','.','.','.','.','2','8','.'],
             ['.','.','.','4','1','9','.','.','5'],
             ['.','.','.','.','8','.','.','7','9'],
-        ])
+        ]))

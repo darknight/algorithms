@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} nums
     # @return {string[]}
@@ -28,5 +30,5 @@ class Solution:
         return res
 
 if __name__ == '__main__':
-    print Solution().summaryRanges([0,1,2,4,5,7])
-    print Solution().summaryRanges([0,1,2,3,4,5])
+    print(Solution().summaryRanges([0,1,2,4,5,7]))
+    print(Solution().summaryRanges([0,1,2,3,4,5]))

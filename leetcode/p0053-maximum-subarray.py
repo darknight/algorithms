@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A, a list of integers
     # @return an integer
@@ -22,7 +24,7 @@ class Solution:
         pass
 
 if __name__ == '__main__':
-    print Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
-    print Solution().maxSubArray([1,-2,3,10,-4,7,2,-5])
-    print Solution().maxSubArray([-5])
+    print(Solution().maxSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+    print(Solution().maxSubArray([1,-2,3,10,-4,7,2,-5]))
+    print(Solution().maxSubArray([-5]))
 

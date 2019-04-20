@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {integer[]} height
     # @return {integer}
@@ -42,6 +44,6 @@ class Solution:
         pass
 
 if __name__ == '__main__':
-    print Solution().trap([2,5,1,3,1,2,1,7,7,6])
-    print Solution().trap([2,5,1,2,3,4,7,7,6])
-    print Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1])
+    print(Solution().trap([2,5,1,3,1,2,1,7,7,6]))
+    print(Solution().trap([2,5,1,2,3,4,7,7,6]))
+    print(Solution().trap([0,1,0,2,1,0,1,3,2,1,2,1]))

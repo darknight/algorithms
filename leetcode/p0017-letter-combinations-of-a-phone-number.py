@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def letterCombinations(self, digits):
         """
@@ -34,5 +36,5 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().letterCombinations('23')
+    print(Solution().letterCombinations('23'))
 

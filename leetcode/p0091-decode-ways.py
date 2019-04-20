@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def _numDecodings(self, s):
         """
@@ -72,9 +74,9 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    print Solution().numDecodings('80')
-    print Solution().numDecodings('00')
-    print Solution().numDecodings('12')
-    print Solution().numDecodings('27')
-    print Solution().numDecodings('99')
-    print Solution().numDecodings("4757562545844617494555774581341211511296816786586787755257741178599337186486723247528324612117156948")
+    print(Solution().numDecodings('80'))
+    print(Solution().numDecodings('00'))
+    print(Solution().numDecodings('12'))
+    print(Solution().numDecodings('27'))
+    print(Solution().numDecodings('99'))
+    print(Solution().numDecodings("4757562545844617494555774581341211511296816786586787755257741178599337186486723247528324612117156948")

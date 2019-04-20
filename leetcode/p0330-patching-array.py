@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def minPatches(self, nums, n):
         """
@@ -17,8 +19,8 @@ class Solution(object):
             patch = 0
             start = 1
         longest = 1
-        #print 'patch', patch
-        #print 'longest', longest
+        #print('patch', patch)
+        #print('longest', longest)
         while start < length:
             if longest >= n:
                 break
@@ -28,15 +30,15 @@ class Solution(object):
             else:
                 patch += 1
                 longest += longest + 1
-        #print 'patch', patch
-        #print 'longest', longest
+        #print('patch', patch)
+        #print('longest', longest)
         while longest < n:
             patch += 1
             longest += longest + 1
         return patch
 
 if __name__ == '__main__':
-    #print Solution().minPatches([1,3], 6)
-    #print Solution().minPatches([1,5,10], 20)
-    #print Solution().minPatches([1,2,2], 5)
-    print Solution().minPatches([], 31)
+    #print(Solution().minPatches([1,3], 6))
+    #print(Solution().minPatches([1,5,10], 20))
+    #print(Solution().minPatches([1,2,2], 5))
+    print(Solution().minPatches([], 31))

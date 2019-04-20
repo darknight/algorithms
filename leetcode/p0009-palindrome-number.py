@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @return a boolean
     def isPalindrome(self, x):
@@ -10,8 +12,8 @@ class Solution:
         return y == x
 
 if __name__ == '__main__':
-    print Solution().isPalindrome(-1)
-    print Solution().isPalindrome(9)
-    print Solution().isPalindrome(15)
-    print Solution().isPalindrome(66)
-    print Solution().isPalindrome(111)
+    print(Solution().isPalindrome(-1))
+    print(Solution().isPalindrome(9))
+    print(Solution().isPalindrome(15))
+    print(Solution().isPalindrome(66))
+    print(Solution().isPalindrome(111))

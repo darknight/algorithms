@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {string} s
     # @param {string} t
@@ -19,7 +21,7 @@ class Solution:
         return True
 
 if __name__ == '__main__':
-    print Solution().isIsomorphic('title', 'paper')
-    print Solution().isIsomorphic('egg', 'add')
-    print Solution().isIsomorphic('foo', 'bar')
-    print Solution().isIsomorphic('bar', 'foo')
+    print(Solution().isIsomorphic('title', 'paper'))
+    print(Solution().isIsomorphic('egg', 'add'))
+    print(Solution().isIsomorphic('foo', 'bar'))
+    print(Solution().isIsomorphic('bar', 'foo'))

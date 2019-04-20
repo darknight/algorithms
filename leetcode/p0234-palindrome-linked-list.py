@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -83,5 +85,5 @@ if __name__ == '__main__':
     node3 = ListNode(3)
     node1.next = node2
     node2.next = node3
-    print Solution().isPalindrome(node1)
+    print(Solution().isPalindrome(node1))
 

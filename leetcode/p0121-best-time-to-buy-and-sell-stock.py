@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param prices, a list of integer
     # @return an integer
@@ -40,8 +42,8 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print Solution().maxProfit([1,2])
-    print Solution().maxProfit([2,1])
-    #print Solution().maxProfit([1,1,1])
-    #print Solution().maxProfit([1,2,3,4,8,9,10])
-    #print Solution().maxProfit([8,9,10,11,1,10,8,9])
+    print(Solution().maxProfit([1,2]))
+    print(Solution().maxProfit([2,1]))
+    #print(Solution().maxProfit([1,1,1]))
+    #print(Solution().maxProfit([1,2,3,4,8,9,10]))
+    #print(Solution().maxProfit([8,9,10,11,1,10,8,9]))

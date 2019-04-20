@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def isPowerOfThree(self, n):
         """
@@ -14,9 +16,9 @@ class Solution(object):
         return False
 
 if __name__ == '__main__':
-    print Solution().isPowerOfThree(0)
-    print Solution().isPowerOfThree(1)
-    print Solution().isPowerOfThree(2)
-    print Solution().isPowerOfThree(3)
-    print Solution().isPowerOfThree(27)
-    print Solution().isPowerOfThree(56)
+    print(Solution().isPowerOfThree(0))
+    print(Solution().isPowerOfThree(1))
+    print(Solution().isPowerOfThree(2))
+    print(Solution().isPowerOfThree(3))
+    print(Solution().isPowerOfThree(27))
+    print(Solution().isPowerOfThree(56))

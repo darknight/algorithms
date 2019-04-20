@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def minimumTotal(self, triangle):
         """
@@ -26,4 +28,4 @@ if __name__ == '__main__':
         [6,5,7],
         [4,1,8,3]
     ]
-    print Solution().minimumTotal(triangle)
+    print(Solution().minimumTotal(triangle))

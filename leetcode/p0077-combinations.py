@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def combine(self, n, k):
         """
@@ -22,7 +24,7 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().combine(4, 1)
-    print Solution().combine(4, 2)
-    print Solution().combine(4, 3)
-    print Solution().combine(4, 4)
+    print(Solution().combine(4, 1))
+    print(Solution().combine(4, 2))
+    print(Solution().combine(4, 3))
+    print(Solution().combine(4, 4))

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def nextPermutation(self, nums):
         """
@@ -16,10 +18,10 @@ class Solution(object):
             if nums[i-1] < nums[i]:
                 stop = i
                 break
-        #print stop
+        #print(stop)
         if stop < 0:
             nums.sort()
-            #print nums
+            #print(nums)
             return
         for i in range(stop-1):
             copy.remove(nums[i])
@@ -33,7 +35,7 @@ class Solution(object):
         for i in range(stop-1, length):
             nums[i] = copy[i - (stop-1)]
 
-        #print nums
+        #print(nums)
 
 if __name__ == '__main__':
     #Solution().nextPermutation([1,2,3])

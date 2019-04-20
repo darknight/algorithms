@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def generateParenthesis(self, n):
         """
@@ -30,7 +32,7 @@ class Solution(object):
         return res
 
 if __name__ == '__main__':
-    print Solution().generateParenthesis(1)
-    print Solution().generateParenthesis(2)
-    print Solution().generateParenthesis(3)
-    print Solution().generateParenthesis(4)
+    print(Solution().generateParenthesis(1))
+    print(Solution().generateParenthesis(2))
+    print(Solution().generateParenthesis(3))
+    print(Solution().generateParenthesis(4))

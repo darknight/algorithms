@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A, a list of integers
     # @param target, an integer to be inserted
@@ -20,7 +22,7 @@ class Solution:
         return idx
 
 if __name__ == '__main__':
-    print Solution().searchInsert([1,3,5,6], 5)
-    print Solution().searchInsert([1,3,5,6], 2)
-    print Solution().searchInsert([1,3,5,6], 7)
-    print Solution().searchInsert([1,3,5,6], 0)
+    print(Solution().searchInsert([1,3,5,6], 5))
+    print(Solution().searchInsert([1,3,5,6], 2))
+    print(Solution().searchInsert([1,3,5,6], 7))
+    print(Solution().searchInsert([1,3,5,6], 0))

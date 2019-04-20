@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param {string} a
     # @param {string} b
@@ -36,9 +38,9 @@ class Solution:
         return ''.join(res)
 
 if __name__ == '__main__':
-    print Solution().addBinary('11', '1')
-    print Solution().addBinary('10', '10')
-    print Solution().addBinary('111', '111')
-    print Solution().addBinary('1111111', '1')
-    print Solution().addBinary('10000000', '1000')
+    print(Solution().addBinary('11', '1'))
+    print(Solution().addBinary('10', '10'))
+    print(Solution().addBinary('111', '111'))
+    print(Solution().addBinary('1111111', '1'))
+    print(Solution().addBinary('10000000', '1000'))
 

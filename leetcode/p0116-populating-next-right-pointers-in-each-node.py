@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for a  binary tree node
 class TreeNode:
     def __init__(self, x):
@@ -32,5 +34,5 @@ if __name__ == '__main__':
     Solution().connect(p)
     Solution().connect(None)
 
-    print p.left.next.val == 2
-    print p.left.right.next.val == 5
+    print(p.left.next.val == 2)
+    print(p.left.right.next.val == 5)

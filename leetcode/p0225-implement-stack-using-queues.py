@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Stack:
     # initialize your data structure here.
     def __init__(self):
@@ -39,13 +41,13 @@ if __name__ == '__main__':
     s = Stack()
     s.push(1)
     s.push(2)
-    print s.top() == 2
+    print(s.top() == 2)
     s.pop()
-    print s.top() == 1
-    print s.empty() == False
+    print(s.top() == 1)
+    print(s.empty() == False)
     s.push(3)
-    print s.top() == 3
+    print(s.top() == 3)
     s.pop()
     s.pop()
-    print s.empty() == True
+    print(s.empty() == True)
 

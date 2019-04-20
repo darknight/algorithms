@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution(object):
     def uniquePathsWithObstacles(self, obstacleGrid):
         """
@@ -40,5 +42,5 @@ if __name__ == '__main__':
         [1,0,0],
         [0,0,0],
     ]
-    #print Solution().uniquePathsWithObstacles(grid)
-    print Solution().uniquePathsWithObstacles([[1,0]])
+    #print(Solution().uniquePathsWithObstacles(grid))
+    print(Solution().uniquePathsWithObstacles([[1,0]]))

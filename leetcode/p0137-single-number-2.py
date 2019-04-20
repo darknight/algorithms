@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 class Solution:
     # @param A, a list of integer
     # @return an integer
@@ -21,4 +23,4 @@ class Solution:
         return oneNum
 
 if __name__ == '__main__':
-    print Solution().singleNumber([1,2,3,4,3,2,1,1,2,3])
+    print(Solution().singleNumber([1,2,3,4,3,2,1,1,2,3]))

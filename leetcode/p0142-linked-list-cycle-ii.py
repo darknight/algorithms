@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -69,10 +71,10 @@ if __name__ == '__main__':
     head = nodes[0]
     nodes[0].next = nodes[1]
     nodes[1].next = nodes[0]
-    print Solution().hasCycle(head).val
+    print(Solution().hasCycle(head).val)
 
     for i in range(6):
         nodes[i].next = nodes[i+1]
-    print Solution().hasCycle(head)
+    print(Solution().hasCycle(head))
     nodes[-1].next = nodes[3]
-    print Solution().hasCycle(head).val
+    print(Solution().hasCycle(head).val)
