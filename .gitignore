@@ -19,3 +19,6 @@
 
 # temporary
 *.swp
+
+_template.py
+.idea
