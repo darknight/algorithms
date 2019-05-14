@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 class Solution:
+    from typing import List
     # @param prices, a list of integer
     # @return an integer
-    def _maxProfit(self, prices):
+    def maxProfit1(self, prices):
         '''
         Time Limit Exceeded
         '''
@@ -14,7 +15,7 @@ class Solution:
                 best = max(best, prices[j]-prices[i])
         return best
 
-    def maxProfit(self, prices):
+    def maxProfit2(self, prices):
         '''
         find index of min value when array is descending order,
         then when the array become ascending order, calculate the best profit,
@@ -40,10 +41,37 @@ class Solution:
             i = j+1
         return best
 
+    def maxProfit3(self, prices: List[int]) -> int:
+        if len(prices) <= 1:
+            return 0
+        best = 0
+        i = 0
+        while i < len(prices) - 1:
+            j = i + 1
+            if prices[i] >= prices[j]:
+                i += 1
+                continue
+            while j < len(prices)  and prices[j] > prices[i]:
+                best = max(best, prices[j] - prices[i])
+                j += 1
+            i = j
+        return best
+
+    def maxProfit(self, prices: List[int]) -> int:
+        if len(prices) <= 1:
+            return 0
+        best = 0
+        curr_min = prices[0]
+        for i in range(1, len(prices)):
+            if prices[i] > curr_min:
+                best = max(best, prices[i] - curr_min)
+            else:
+                curr_min = min(curr_min, prices[i])
+        return best
 
 if __name__ == '__main__':
-    print(Solution().maxProfit([1,2]))
-    print(Solution().maxProfit([2,1]))
-    #print(Solution().maxProfit([1,1,1]))
-    #print(Solution().maxProfit([1,2,3,4,8,9,10]))
-    #print(Solution().maxProfit([8,9,10,11,1,10,8,9]))
+    assert Solution().maxProfit([1,2]) == 1
+    assert Solution().maxProfit([2,1]) == 0
+    assert Solution().maxProfit([1,1,1]) == 0
+    assert Solution().maxProfit([1,2,3,4,8,9,10]) == 9
+    assert Solution().maxProfit([8,9,10,11,1,10,8,9]) == 9
