@@ -57,6 +57,7 @@ class Solution:
             i = j
         return best
 
+    # from 3rd party
     def maxProfit(self, prices: List[int]) -> int:
         if len(prices) <= 1:
             return 0

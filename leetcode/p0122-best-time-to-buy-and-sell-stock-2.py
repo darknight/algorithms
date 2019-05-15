@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
 class Solution:
+    from typing import List
     # @param prices, a list of integer
     # @return an integer
-    def maxProfit(self, prices):
+    def _maxProfit(self, prices):
         if len(prices) < 2:
             return 0
         i = 0
@@ -19,6 +20,17 @@ class Solution:
             j += 1
         return res
 
-print(Solution().maxProfit([1,3]))
-print(Solution().maxProfit([1,2,3,4,5]))
-print(Solution().maxProfit([1,2,6,4,5]))
+    # from 3rd party
+    def maxProfit(self, prices: List[int]) -> int:
+        if len(prices) < 2:
+            return 0
+        res = 0
+        for i in range(1, len(prices)):
+            if prices[i] > prices[i-1]:
+                res += prices[i] - prices[i-1]
+        return res
+
+if __name__ == '__main__':
+    assert Solution().maxProfit([7,1,5,3,6,4]) == 7
+    assert Solution().maxProfit([1,2,3,4,5]) == 4
+    assert Solution().maxProfit([7,6,4,3,1]) == 0
