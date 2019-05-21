@@ -22,12 +22,20 @@ class Solution:
                 break
         return ret
 
-    def findMin(self, num):
-        '''
-        Tag: Binary Search
-        '''
-        # TODO
-        pass
+    from typing import List
+    def findMin(self, nums: List[int]) -> int:
+        if len(nums) == 1:
+            return nums[0]
+        l = 0
+        h = len(nums) - 1
+        while l < h:
+            m = l + (h - l) // 2
+            if nums[m] > nums[h]: # min is in [m+1, h]
+                l = m + 1
+            else:
+                h = m
+        return nums[l]
+
 
 if __name__ == '__main__':
     print(Solution().findMin([4,5,6,7,0,1,2]))
