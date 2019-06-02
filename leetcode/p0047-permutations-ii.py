@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Solution(object):
-    def permuteUnique(self, nums):
+    def permuteUnique1(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -30,6 +30,11 @@ class Solution(object):
 
         _permute(0, length-1)
         return res
+
+    from typing import List
+    def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+        # TODO:
+        pass
 
 if __name__ == '__main__':
     #print(Solution().permuteUnique([1,2,3]))
