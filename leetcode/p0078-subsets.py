@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 class Solution(object):
-    def subsets(self, nums):
+    def subsets1(self, nums):
         """
         :type nums: List[int]
         :rtype: List[List[int]]
@@ -19,6 +19,11 @@ class Solution(object):
                     tmp.append(nums[j])
             res.append(tmp)
         return res
+
+    from typing import List
+    def subsets(self, nums: List[int]) -> List[List[int]]:
+        # TODO: use backtracking
+        pass
 
 if __name__ == '__main__':
     print(Solution().subsets([]))
