@@ -13,7 +13,7 @@ class Solution(object):
         length = len(secret)
         smap = defaultdict(int)
         gmap = defaultdict(int)
-        for i in xrange(length):
+        for i in range(length):
             s = secret[i]
             g = guess[i]
             if s == g:
