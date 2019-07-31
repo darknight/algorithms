@@ -10,44 +10,37 @@ class TreeNode(object):
 class Solution(object):
     def lowestCommonAncestor(self, root, p, q):
         """
-        :type root: TreeNode
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: TreeNode
+        idea:
+        find ancestor list for both p and q
         """
         #TODO: slow & improve
-        if root is None:
+        if root is None or p is None or q is None:
             return None
+        if root.val == p.val or root.val == q.val:
+            return root
+
+        def _dfs(root, target, path):
+            path.append(root)
+            if root.val == target.val:
+                return True
+            if root.left is not None:
+                if _dfs(root.left, target, path) is True:
+                    return True
+            if root.right is not None:
+                if _dfs(root.right, target, path) is True:
+                    return True
+            path.pop()
+            return False
 
         plist = []
         qlist = []
-        def _dfs(root, p, q, path):
-            if root is None:
-                return
-            path.append(root)
-            if root is p:
-                plist.append(path[:])
-            if root is q:
-                qlist.append(path[:])
-            _dfs(root.left, p, q, path)
-            _dfs(root.right, p, q, path)
-            path.pop()
+        _dfs(root, p, plist)
+        _dfs(root, q, qlist)
 
-        _dfs(root, p, q, [])
-        res = None
-        max_len = 0
-        for path1 in plist:
-            for path2 in qlist:
-                length = min(len(path1), len(path2))
-                tmp_res = None
-                tmp_len = 0
-                for i in range(length):
-                    if path1[i] is path2[i]:
-                        tmp_res = path1[i]
-                        tmp_len = i + 1
-                if tmp_len > max_len:
-                    res = tmp_res
-        return res
+        i = 0
+        while i < len(plist) and i < len(qlist) and plist[i].val == qlist[i].val:
+            i += 1
+        return plist[i-1]
 
 if __name__ == '__main__':
     n0 = TreeNode(0)
@@ -67,6 +60,6 @@ if __name__ == '__main__':
     n2.right = n4
     n1.left = n0
     n1.right = n8
-    print(Solution().lowestCommonAncestor(n3, n5, n1).val)
-    print(Solution().lowestCommonAncestor(n3, n5, n4).val)
-    print(Solution().lowestCommonAncestor(n3, n5, n0).val)
+    assert Solution().lowestCommonAncestor(n3, n5, n1).val == 3
+    assert Solution().lowestCommonAncestor(n3, n5, n4).val == 5
+    assert Solution().lowestCommonAncestor(n3, n5, n0).val == 3
