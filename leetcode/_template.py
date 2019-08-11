@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-class Solution(object):
+class Solution:
     from typing import List
     pass
 
