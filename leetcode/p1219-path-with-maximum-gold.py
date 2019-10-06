@@ -1,0 +1,1 @@
+contest_weekly_157/p1219-path-with-maximum-gold.py
