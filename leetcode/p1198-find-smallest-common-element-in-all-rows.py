@@ -1,1 +1,1 @@
-contest_biweekly_9/p1198-find-smallest-common-element-in-all-rows.py
+contest_biweekly_009/p1198-find-smallest-common-element-in-all-rows.py
