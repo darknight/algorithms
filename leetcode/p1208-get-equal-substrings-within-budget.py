@@ -1,1 +1,0 @@
-contest_weekly_156/p1208-get-equal-substrings-within-budget.py

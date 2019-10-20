@@ -1,1 +1,0 @@
-contest_biweekly_010/p1215-stepping-numbers.py

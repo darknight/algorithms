@@ -1,1 +1,0 @@
-contest_biweekly_010/p1213-intersection-of-three-sorted-arrays.py

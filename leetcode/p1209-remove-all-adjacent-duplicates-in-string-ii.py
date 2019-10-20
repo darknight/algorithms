@@ -1,1 +1,0 @@
-contest_weekly_156/p1209-remove-all-adjacent-duplicates-in-string-ii.py
