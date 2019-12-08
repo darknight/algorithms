@@ -1,26 +1,28 @@
 #!/usr/bin/env python3
 
+from typing import List
+
 class Solution:
     # @param A, a list of integers
     # @return an integer
-    def maxSubArray(self, A):
+    def DP_maxSubArray(self, nums: List[int]):
         '''
-        f[i] = max(f[i-1] + xi, xi)
+        f(i) = (f(i-1) > 0 ? f(i-1) : 0) + A[i]
         '''
-        if len(A) == 0:
+        size = len(nums)
+        if size == 0:
             return 0
-        max_sum = A[0]
-        curr_sum = 0
-        for x in A:
-            if curr_sum > 0:
-                curr_sum = curr_sum + x
+        dp = [0] * size
+        dp[0] = nums[0]
+        for i in range(1, size):
+            if dp[i-1] > 0:
+                dp[i] = dp[i-1] + nums[i]
             else:
-                curr_sum = x
-            max_sum = max(max_sum, curr_sum)
-        return max_sum
+                dp[i] = nums[i]
+        return max(dp)
 
     # TODO: divide & conquer
-    def maxSubArray2(self, A):
+    def maxSubArray(self, nums: List[int]):
         pass
 
 if __name__ == '__main__':

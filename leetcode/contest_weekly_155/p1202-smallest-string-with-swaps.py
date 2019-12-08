@@ -109,7 +109,7 @@ class Solution:
         return "".join(chars)
 
     # union-find solution
-    def smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:
+    def UF_smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:
         disjoint = [-1] * len(s)
 
         # TLE + stack overflow if without path compression
@@ -152,6 +152,10 @@ class Solution:
                 res[index_list[k]] = char_list[k]
 
         return "".join(res)
+
+    def smallestStringWithSwaps(self, s: str, pairs: List[List[int]]) -> str:
+        # TODO: see it as a graph and try
+        pass
 
 
 if __name__ == '__main__':
