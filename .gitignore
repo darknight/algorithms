@@ -22,3 +22,5 @@
 
 .idea
 .DS_Store
+leetcode/Pipfile.lock
+leetcode/__pycache__
