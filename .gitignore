@@ -24,3 +24,5 @@
 .DS_Store
 leetcode/Pipfile.lock
 leetcode/__pycache__
+leetcode/rust_leetcode/Cargo.lock
+leetcode/rust_leetcode/target
