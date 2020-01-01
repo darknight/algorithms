@@ -1,25 +1,14 @@
 #!/usr/bin/env python3
 
-import math
-import itertools
-from collections import defaultdict
-from typing import List
-from typing import Set
+import math, itertools
+from collections import defaultdict, Counter
+from typing import List, Set
 try:
     from _tree import *
-except ImportError:
-    pass
-
-try:
     from _list import *
+    from _util import *
 except ImportError:
     pass
-
-try:
-    from _uitl import *
-except ImportError:
-    pass
-
 
 class Solution:
     pass
