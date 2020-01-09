@@ -70,6 +70,19 @@ class Solution:
                 curr_min = min(curr_min, prices[i])
         return best
 
+    def AC_maxProfit(self, prices: List[int]) -> int:
+        size = len(prices)
+        if size <= 1:
+            return 0
+        curr_min = prices[0]
+        res = 0
+        for i in range(1, size):
+            curr = prices[i] - curr_min
+            res = max(res, curr)
+            curr_min = min(curr_min, prices[i])
+
+        return res
+
 if __name__ == '__main__':
     assert Solution().maxProfit([1,2]) == 1
     assert Solution().maxProfit([2,1]) == 0

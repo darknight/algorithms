@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from typing import List
+
 class Solution(object):
     def _productExceptSelf(self, nums):
         """
@@ -35,6 +37,23 @@ class Solution(object):
             suffix[i] = suffix[i] * suffix[i+1]
         for i in range(1, length+1):
             res[i-1] = prefix[i-1] * suffix[i+1]
+
+        return res
+
+    def AC_productExceptSelf(self, nums: List[int]) -> List[int]:
+        """
+        res[i] = prefix[i-1] + suffix[i+1]
+        """
+        size = len(nums)
+        if size <= 1:
+            return nums
+        res = [1] * size
+        for i in range(1, size):
+            res[i] = res[i - 1] * nums[i - 1]
+        suffix = 1
+        for j in range(size - 1, -1, -1):
+            res[j] = res[j] * suffix
+            suffix = suffix * nums[j]
 
         return res
 
