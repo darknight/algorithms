@@ -11,7 +11,7 @@ except ImportError:
     pass
 
 class Solution:
-    def numTilePossibilities(self, tiles: str) -> int:
+    def AC_numTilePossibilities(self, tiles: str) -> int:
         chars = list(tiles)
         size = len(chars)
         if size == 1:
@@ -52,6 +52,27 @@ class Solution:
             chars[curr], chars[i] = chars[i], chars[curr]
             self.perm(curr+1, chars, size, res)
             chars[curr], chars[i] = chars[i], chars[curr]
+
+
+    def numTilePossibilities(self, tiles: str) -> int:
+
+        visited = [False] * len(tiles)
+        res = set()
+
+        def dfs(curr: str):
+            if len(curr) > 0:
+                res.add(curr)
+
+            for i in range(len(tiles)):
+                if visited[i] is True:
+                    continue
+                visited[i] = True
+                dfs(curr+tiles[i])
+                visited[i] = False
+
+        dfs("")
+        return len(res)
+
 
 
 if __name__ == '__main__':
