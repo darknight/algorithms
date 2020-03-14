@@ -3,6 +3,6 @@
 import sys
 
 
-n = int(raw_input().strip())
-arr = map(int,raw_input().strip().split(' '))
-print sum(arr)
+n = int(input().rstrip())
+arr = list(map(int, input().rstrip().split()))
+print(sum(arr))
