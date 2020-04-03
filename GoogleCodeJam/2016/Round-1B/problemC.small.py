@@ -20,19 +20,19 @@ def solve(df, ds, raw):
     return len(raw) - res
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        N = int(raw_input())
+        N = int(input())
         df = set()
         ds = set()
         raw = []
         for j in range(N):
-            first, second = raw_input().split()
+            first, second = input().split()
             raw.append((first, second))
             df.add(first)
             ds.add(second)
         res = solve(df, ds, raw)
-        print 'Case #%d: %d' % (int(i), res)
+        print('Case #%d: %d' % (int(i), res))
 
 if __name__ == '__main__':
     main()

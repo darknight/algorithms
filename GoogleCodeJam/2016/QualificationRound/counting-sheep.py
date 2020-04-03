@@ -4,7 +4,7 @@ def solve(N):
     maxint = sys.maxint
     seen = set()
     n = 0
-    while len(seen) < 10 and maxint - n >= N :
+    while len(seen) < 10 and maxint - n >= N:
         n += N
         k = n
         while k:
@@ -16,14 +16,14 @@ def solve(N):
 
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        N = int(raw_input())
+        N = int(input())
         if N == 0:
-            print 'Case #%d: %s' % (i, 'INSOMNIA')
+            print('Case #%d: %s' % (i, 'INSOMNIA'))
         else:
             res = solve(N)
-            print 'Case #%d: %s' % (i, res)
+            print('Case #%d: %s' % (i, res))
 
 if __name__ == '__main__':
     main()

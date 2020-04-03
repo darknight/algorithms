@@ -39,10 +39,10 @@ def solve(total, data):
     return ' '.join(res)
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        N = int(raw_input())
-        raw = raw_input().split()
+        N = int(input())
+        raw = input().split()
         data = []
         total = 0
         for j in range(N):
@@ -50,7 +50,7 @@ def main():
             total += party
             data.append([chr(ord('A')+j), party])
         res = solve(total, data)
-        print 'Case #%d: %s' % (int(i), res)
+        print('Case #%d: %s' % (int(i), res))
 
 if __name__ == '__main__':
     main()

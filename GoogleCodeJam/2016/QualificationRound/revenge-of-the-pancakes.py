@@ -15,9 +15,9 @@ def solve(stack):
     return n
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        raw = raw_input()
+        raw = input()
         stack = []
         for c in raw:
             if c == '+':
@@ -25,7 +25,7 @@ def main():
             else:
                 stack.append(0)
         num = solve(stack)
-        print 'Case #%d: %d' % (i, num)
+        print('Case #%d: %d' % (i, num))
 
 if __name__ == '__main__':
     main()

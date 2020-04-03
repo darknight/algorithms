@@ -37,19 +37,19 @@ def solve(df, ds, raw):
 
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        N = int(raw_input())
+        N = int(input())
         df = defaultdict(int)
         ds = defaultdict(int)
         raw = []
         for j in range(N):
-            first, second = raw_input().split()
+            first, second = input().split()
             raw.append((first, second))
             df[first] += 1
             ds[second] += 1
         res = solve(df, ds, raw)
-        print 'Case #%d: %d' % (int(i), res)
+        print('Case #%d: %d' % (int(i), res))
 
 if __name__ == '__main__':
     main()

@@ -25,11 +25,11 @@ def solve(S):
     return ''.join(nums)
 
 def main():
-    T = int(raw_input())
+    T = int(input())
     for i in range(1, T+1):
-        S = raw_input()
+        S = input()
         res = solve(S)
-        print 'Case #%d: %s' % (int(i), res)
+        print('Case #%d: %s' % (int(i), res))
 
 if __name__ == '__main__':
     main()
