@@ -10,8 +10,8 @@ class Solution:
 
 
 if __name__ == '__main__':
-    s = Solution()
-    t = int(input())
-    for i in range(1, t + 1):
+    sln = Solution()
+    T = int(input())
+    for i in range(1, T + 1):
         n, m = [int(s) for s in input().split(" ")]
         print("Case #{}: {} {}".format(i, n + m, n * m))
