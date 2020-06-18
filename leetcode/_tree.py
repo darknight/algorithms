@@ -37,6 +37,10 @@ def construct_tree(data_list: List[Any]) -> TreeNode:
     return node
 
 
+def tree_print(root: TreeNode) -> List[Any]:
+    pass
+
+
 if __name__ == '__main__':
     root = construct_tree([10, 9, 8, 7, 6, None, 5, 4, 3, None, 2])
     assert root.val == 10
