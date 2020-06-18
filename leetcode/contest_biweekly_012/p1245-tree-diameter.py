@@ -87,6 +87,9 @@ class Solution:
             res[0] = curr.copy()
         curr.pop()
 
+    # solution that easy to understand
+    # https://leetcode.com/problems/tree-diameter/discuss/418982/Java-Depth-of-the-Tree-solution-Time-O(N)-Easy-to-understand
+
 
 if __name__ == '__main__':
     assert Solution().treeDiameter([[0,1],[0,2]]) == 2

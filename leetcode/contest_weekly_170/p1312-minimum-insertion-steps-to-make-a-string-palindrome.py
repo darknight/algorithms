@@ -72,6 +72,8 @@ class Solution:
     # recursion + memoization
     # https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/discuss/470684/C%2B%2B-Simple-DP-(Memoization)-and-Bottom-up-with-O(n)-Space
 
+    # https://www.acwing.com/solution/LeetCode/content/7386/
+
 if __name__ == '__main__':
     print(Solution().minInsertions("zzazz"))
     # print(Solution().minInsertions("mbadm"))
