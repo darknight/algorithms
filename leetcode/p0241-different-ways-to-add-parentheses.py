@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
+from typing import List
+
 class Solution(object):
-    def diffWaysToCompute(self, input):
+    def AC_diffWaysToCompute(self, input):
         """
         :type input: str
         :rtype: List[int]
@@ -28,6 +30,29 @@ class Solution(object):
 
         res = _compute(0, len(input)-1)
         return res
+
+    def diffWaysToCompute(self, expression: str) -> List[int]:
+        """
+        divide and conquer
+        """
+        def divide(exp: str) -> List[int]:
+            if exp.isnumeric():
+                return [int(exp)]
+            res = []
+            for i in range(len(exp)):
+                if exp[i] in "+-*":
+                    for l in divide(exp[:i]):
+                        for r in divide(exp[i+1:]):
+                            if exp[i] == "+":
+                                res.append(l+r)
+                            elif exp[i] == "-":
+                                res.append(l - r)
+                            else:
+                                res.append(l * r)
+            return res
+
+        return divide(expression)
+
 
 if __name__ == '__main__':
     print(Solution().diffWaysToCompute('2-1-1'))
