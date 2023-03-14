@@ -22,3 +22,12 @@ object Solution {
     true
   }
 }
+
+object Test {
+  def main(args: Array[String]): Unit = {
+    //    println(Solution.wordPattern("abba", "dog cat cat dog"))
+    //    println(Solution.wordPattern("abba", "dog cat cat fish"))
+    //    println(Solution.wordPattern("aaaa", "dog cat cat dog"))
+    println(Solution.wordPattern("abba", "dog dog dog dog"))
+  }
+}
