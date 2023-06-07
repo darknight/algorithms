@@ -49,6 +49,40 @@ class Solution:
                 gt -= 1
                 nums[i], nums[gt] = nums[gt], nums[i]
 
+
+    def sortColors_two_pass(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        count = [0, 0, 0]
+        for i in nums:
+            count[i] += 1
+        i = 0
+        for idx, cnt in enumerate(count):
+            for _ in range(cnt):
+                nums[i] = idx
+                i += 1
+
+
+    def sortColors_official(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        p0 = 0
+        p2 = len(nums) - 1
+        curr = 0
+        while curr <= p2:
+            if nums[curr] == 0:
+                nums[curr], nums[p0] = nums[p0], nums[curr]
+                curr += 1
+                p0 += 1
+            elif nums[curr] == 1:
+                curr += 1
+            else:
+                nums[curr], nums[p2] = nums[p2], nums[curr]
+                p2 -= 1
+
+
 if __name__ == '__main__':
     A = [0,0]
     Solution().sortColors(A)
