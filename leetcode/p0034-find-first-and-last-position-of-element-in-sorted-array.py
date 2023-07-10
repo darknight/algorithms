@@ -1,10 +1,18 @@
 #!/usr/bin/env python3
 
+import math, itertools, functools, heapq
+from collections import defaultdict, Counter
+from typing import List, Set, Dict, Tuple
+try:
+    from _tree import *
+    from _list import *
+    from _util import *
+except ImportError:
+    pass
+
+
 class Solution:
-    # @param {integer[]} nums
-    # @param {integer} target
-    # @return {integer[]}
-    def _searchRange(self, nums, target):
+    def searchRange_2_passes(self, nums: List[int], target: int) -> List[int]:
         error = [-1, -1]
         length = len(nums)
         if length == 0:
@@ -49,9 +57,8 @@ class Solution:
             return error
         return [lower, upper]
 
-    from typing import List
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
-        from typing import List
+    def searchRange_old(self, nums: List[int], target: int) -> List[int]:
+
         def binary_search(nums: List[int], target: int) -> int:
             l = 0
             h = len(nums)  # from 3rd party
@@ -73,6 +80,45 @@ class Solution:
             return [-1, -1]
         high = binary_search(nums, target+1)
         return [low, high-1]
+
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        if len(nums) == 0:
+            return [-1, -1]
+
+        def search_low(nums: List[int], target: int) -> int:
+            i = 0
+            j = len(nums) - 1
+            left = -1
+            while i <= j:
+                mid = (i + j) // 2
+                if nums[mid] < target:
+                    i = mid + 1
+                elif nums[mid] > target:
+                    j = mid - 1
+                else:
+                    left = mid
+                    j = mid - 1
+            return left
+
+        def search_high(nums: List[int], target: int) -> int:
+            i = 0
+            j = len(nums) - 1
+            right = -1
+            while i <= j:
+                mid = (i + j) // 2
+                if nums[mid] < target:
+                    i = mid + 1
+                elif nums[mid] > target:
+                    j = mid - 1
+                else:
+                    right = mid
+                    i = mid + 1
+            return right
+
+        low = search_low(nums, target)
+        if low == -1:
+            return [-1, -1]
+        return [low, search_high(nums, target)]
 
 
 if __name__ == '__main__':
